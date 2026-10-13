@@ -230,7 +230,7 @@ class DemoSeeder extends Seeder
     private function anyAdmin(): Admin
     {
         return Admin::query()->orderBy('id')->first()
-            ?? Admin::create(['name' => 'Demo System', 'email' => 'demo-system@solveit.test', 'password' => Hash::make(Str::random(40)), 'is_active' => false]);
+            ?? $this->make(new Admin, ['email' => 'demo-system@solveit.test'], ['name' => 'Demo System', 'password' => Hash::make(Str::random(40)), 'is_active' => false]);
     }
 
     private function admins(): Admin
@@ -245,7 +245,7 @@ class DemoSeeder extends Seeder
 
         $super = null;
         foreach (self::ADMINS as $i => [$name, $email, $role]) {
-            $admin = Admin::firstOrCreate(['email' => $email], ['name' => $name, 'password' => Hash::make(self::PASSWORD), 'is_active' => true]);
+            $admin = $this->make(new Admin, ['email' => $email], ['name' => $name, 'password' => Hash::make(self::PASSWORD), 'is_active' => true]);
             $admin->forceFill(['invitation_accepted_at' => now()->subDays(90 - $i), 'last_login_at' => now()->subHours(3 + $i)])->save();
             $admin->syncRoles([$role]);
             $super ??= $admin;
@@ -281,7 +281,7 @@ class DemoSeeder extends Seeder
                     'effectiveFrom' => now()->subMonth()->startOfDay()->format('Y-m-d\TH:i:s\Z'), 'effectiveUntil' => null];
                 $policy = app(\App\Services\Catalog\CatalogPolicy::class)->validate($policy);
                 $hash = hash('sha256', json_encode($policy, JSON_THROW_ON_ERROR));
-                $entry = CatalogEntry::firstOrCreate(['code' => $code]);
+                $entry = $this->make(new CatalogEntry, ['code' => $code]);
                 $version = CatalogVersion::where('entry_id', $entry->id)->orderByDesc('version')->first();
                 if (! $version || $version->status !== 'enabled' || ($version->policy_hash !== $hash && $this->stale($version, $policy))) {
                     $version = new CatalogVersion;
@@ -316,10 +316,10 @@ class DemoSeeder extends Seeder
 
     private function user(string $name, string $email, string $country, string $phone): void
     {
-        $user = User::firstOrCreate(['email' => $email], ['name' => $name, 'password' => Hash::make(self::PASSWORD)]);
+        $user = $this->make(new User, ['email' => $email], ['name' => $name, 'password' => Hash::make(self::PASSWORD)]);
         $user->forceFill(['email_verified_at' => now()->subDays(40)])->save();
-        UserProfile::firstOrNew(['user_id' => $user->id])->forceFill(['user_id' => $user->id, 'phone' => $phone, 'country' => $country, 'language' => 'ar', 'timezone' => 'Asia/Dubai', 'version' => 1])->save();
-        UserPreference::firstOrNew(['user_id' => $user->id])->forceFill(['user_id' => $user->id, 'contact_channels' => ['email'], 'ai_assistance_enabled' => true, 'recording_preference' => false, 'context_visibility' => 'private', 'version' => 1])->save();
+        $this->one(UserProfile::class, 'user_id', $user->id)->forceFill(['user_id' => $user->id, 'phone' => $phone, 'country' => $country, 'language' => 'ar', 'timezone' => 'Asia/Dubai', 'version' => 1])->save();
+        $this->one(UserPreference::class, 'user_id', $user->id)->forceFill(['user_id' => $user->id, 'contact_channels' => ['email'], 'ai_assistance_enabled' => true, 'recording_preference' => false, 'context_visibility' => 'private', 'version' => 1])->save();
         foreach (['terms', 'privacy', 'ai_assistance'] as $purpose) {
             $policy = PolicyVersion::where('purpose', $purpose)->where('locale', 'ar')->where('is_published', true)->orderByDesc('effective_at')->first();
             if ($policy && ! UserConsentRecord::where(['user_id' => $user->id, 'purpose' => $purpose])->exists()) {
@@ -340,7 +340,7 @@ class DemoSeeder extends Seeder
             }
         }
         $homeDomain = array_key_first($plan);
-        $expert = Expert::firstOrCreate(['email' => $e['email']], ['name' => $e['name'], 'password' => Hash::make(self::PASSWORD), 'is_active' => true, 'kyc_status' => ExpertKycStatus::Approved]);
+        $expert = $this->make(new Expert, ['email' => $e['email']], ['name' => $e['name'], 'password' => Hash::make(self::PASSWORD), 'is_active' => true, 'kyc_status' => ExpertKycStatus::Approved]);
         $expert->forceFill(['email_verified_at' => now()->subDays(300), 'is_active' => true, 'is_demo' => true, 'kyc_status' => ExpertKycStatus::Approved, 'country' => $e['country'], 'language' => 'ar', 'domain' => $homeDomain])->save();
 
         $multi = count(array_unique(array_merge(...array_values(array_map('array_keys', $plan))))) > 1;
@@ -407,7 +407,7 @@ class DemoSeeder extends Seeder
 
     private function profile(Expert $expert, array $e): void
     {
-        $profile = ExpertProfile::firstOrNew(['expert_id' => $expert->id]);
+        $profile = $this->one(ExpertProfile::class, 'expert_id', $expert->id);
         $data = ['expert_id' => $expert->id, 'slug' => $e['slug'], 'professional_title' => $e['title'], 'bio' => $e['bio'], 'years_experience' => $e['years'],
             'specialties' => $e['specialties'], 'public_languages' => ['ar', 'en'], 'is_published' => true, 'published_at' => $profile->published_at ?: now()->subDays(50)];
         if (! empty($e['photo']) && ! $profile->avatar_path) {
@@ -418,9 +418,27 @@ class DemoSeeder extends Seeder
         }
         $profile->forceFill($data)->save();
         $day = fn (string $d, bool $on) => ['day' => $d, 'enabled' => $on, 'windows' => $on ? [['start' => '10:00', 'end' => '16:00']] : []];
-        ExpertAvailabilitySetting::firstOrNew(['expert_id' => $expert->id])->forceFill(['expert_id' => $expert->id, 'timezone' => 'Asia/Dubai', 'service_modes' => ['video_consultation', 'written_consultation', 'document_review'],
+        $this->one(ExpertAvailabilitySetting::class, 'expert_id', $expert->id)->forceFill(['expert_id' => $expert->id, 'timezone' => 'Asia/Dubai', 'service_modes' => ['video_consultation', 'written_consultation', 'document_review'],
             'weekly_schedule' => [$day('mon', true), $day('tue', true), $day('wed', true), $day('thu', true), $day('fri', true), $day('sat', false), $day('sun', false)],
             'blackout_dates' => [], 'max_active_requests' => 5, 'response_time_hours' => 24, 'accepting_new_requests' => true])->save();
+    }
+
+    /** firstOrNew that never mass-assigns the lookup key (strict models in production). */
+    private function one(string $class, string $column, mixed $value): \Illuminate\Database\Eloquent\Model
+    {
+        return $class::query()->where($column, $value)->first() ?? new $class;
+    }
+
+    /** firstOrCreate that bypasses mass-assignment guards (strict models in production). */
+    private function make(\Illuminate\Database\Eloquent\Model $model, array $keys, array $extra = []): \Illuminate\Database\Eloquent\Model
+    {
+        $found = $model::query()->where($keys)->first();
+        if ($found) {
+            return $found;
+        }
+        $model->forceFill($keys + $extra)->save();
+
+        return $model;
     }
 
     private function pdf(string $text): string
