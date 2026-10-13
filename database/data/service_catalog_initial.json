@@ -1,0 +1,2956 @@
+{
+  "notice": "Initial draft templates. Not launch approval. Additive import only. Review service-specific safety/intake/evidence before publishing.",
+  "nodes": [
+    {
+      "kind": "country",
+      "code": "JO",
+      "labels": {
+        "ar": "الأردن",
+        "en": "Jordan"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "AE",
+      "labels": {
+        "ar": "الإمارات",
+        "en": "United Arab Emirates"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "GB",
+      "labels": {
+        "ar": "المملكة المتحدة",
+        "en": "United Kingdom"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "SA",
+      "labels": {
+        "ar": "السعودية",
+        "en": "Saudi Arabia"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "EG",
+      "labels": {
+        "ar": "مصر",
+        "en": "Egypt"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "PS",
+      "labels": {
+        "ar": "فلسطين",
+        "en": "Palestine"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "QA",
+      "labels": {
+        "ar": "قطر",
+        "en": "Qatar"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "KW",
+      "labels": {
+        "ar": "الكويت",
+        "en": "Kuwait"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "BH",
+      "labels": {
+        "ar": "البحرين",
+        "en": "Bahrain"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "country",
+      "code": "OM",
+      "labels": {
+        "ar": "عمان",
+        "en": "Oman"
+      },
+      "parentCode": null,
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "JO-NATIONAL",
+      "labels": {
+        "ar": "JO-NATIONAL",
+        "en": "JO-NATIONAL"
+      },
+      "parentCode": "JO",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "AE-FEDERAL",
+      "labels": {
+        "ar": "AE-FEDERAL",
+        "en": "AE-FEDERAL"
+      },
+      "parentCode": "AE",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "AE-DIFC",
+      "labels": {
+        "ar": "AE-DIFC",
+        "en": "AE-DIFC"
+      },
+      "parentCode": "AE",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "AE-ADGM",
+      "labels": {
+        "ar": "AE-ADGM",
+        "en": "AE-ADGM"
+      },
+      "parentCode": "AE",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "GB-ENGLAND_WALES",
+      "labels": {
+        "ar": "GB-ENGLAND_WALES",
+        "en": "GB-ENGLAND_WALES"
+      },
+      "parentCode": "GB",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "GB-SCOTLAND",
+      "labels": {
+        "ar": "GB-SCOTLAND",
+        "en": "GB-SCOTLAND"
+      },
+      "parentCode": "GB",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "GB-NORTHERN_IRELAND",
+      "labels": {
+        "ar": "GB-NORTHERN_IRELAND",
+        "en": "GB-NORTHERN_IRELAND"
+      },
+      "parentCode": "GB",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "SA-NATIONAL",
+      "labels": {
+        "ar": "SA-NATIONAL",
+        "en": "SA-NATIONAL"
+      },
+      "parentCode": "SA",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "EG-NATIONAL",
+      "labels": {
+        "ar": "EG-NATIONAL",
+        "en": "EG-NATIONAL"
+      },
+      "parentCode": "EG",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "PS-NATIONAL",
+      "labels": {
+        "ar": "PS-NATIONAL",
+        "en": "PS-NATIONAL"
+      },
+      "parentCode": "PS",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "QA-NATIONAL",
+      "labels": {
+        "ar": "QA-NATIONAL",
+        "en": "QA-NATIONAL"
+      },
+      "parentCode": "QA",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "KW-NATIONAL",
+      "labels": {
+        "ar": "KW-NATIONAL",
+        "en": "KW-NATIONAL"
+      },
+      "parentCode": "KW",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "BH-NATIONAL",
+      "labels": {
+        "ar": "BH-NATIONAL",
+        "en": "BH-NATIONAL"
+      },
+      "parentCode": "BH",
+      "status": "draft"
+    },
+    {
+      "kind": "jurisdiction",
+      "code": "OM-NATIONAL",
+      "labels": {
+        "ar": "OM-NATIONAL",
+        "en": "OM-NATIONAL"
+      },
+      "parentCode": "OM",
+      "status": "draft"
+    },
+    {
+      "kind": "domain",
+      "code": "technology",
+      "labels": {
+        "ar": "التقنية",
+        "en": "Technology"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "regulated": false
+    },
+    {
+      "kind": "domain",
+      "code": "business",
+      "labels": {
+        "ar": "الأعمال",
+        "en": "Business"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "regulated": false
+    },
+    {
+      "kind": "domain",
+      "code": "design",
+      "labels": {
+        "ar": "التصميم",
+        "en": "Design"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "regulated": false
+    },
+    {
+      "kind": "domain",
+      "code": "marketing",
+      "labels": {
+        "ar": "التسويق",
+        "en": "Marketing"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "regulated": false
+    },
+    {
+      "kind": "domain",
+      "code": "career",
+      "labels": {
+        "ar": "المسار المهني",
+        "en": "Career"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "regulated": false
+    },
+    {
+      "kind": "domain",
+      "code": "education",
+      "labels": {
+        "ar": "التعليم",
+        "en": "Education"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "regulated": false
+    },
+    {
+      "kind": "domain",
+      "code": "translation",
+      "labels": {
+        "ar": "الترجمة",
+        "en": "Translation"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "regulated": false
+    },
+    {
+      "kind": "domain",
+      "code": "legal",
+      "labels": {
+        "ar": "القانون",
+        "en": "Legal"
+      },
+      "parentCode": null,
+      "status": "draft",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "accounting",
+      "labels": {
+        "ar": "المحاسبة",
+        "en": "Accounting"
+      },
+      "parentCode": null,
+      "status": "draft",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "tax",
+      "labels": {
+        "ar": "الضرائب",
+        "en": "Tax"
+      },
+      "parentCode": null,
+      "status": "draft",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "engineering",
+      "labels": {
+        "ar": "الهندسة",
+        "en": "Engineering"
+      },
+      "parentCode": null,
+      "status": "draft",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "privacy_compliance",
+      "labels": {
+        "ar": "الامتثال للخصوصية",
+        "en": "Privacy compliance"
+      },
+      "parentCode": null,
+      "status": "draft",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "regulated_hr",
+      "labels": {
+        "ar": "قانون العمل",
+        "en": "Regulated HR"
+      },
+      "parentCode": null,
+      "status": "draft",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "intellectual_property",
+      "labels": {
+        "ar": "الملكية الفكرية",
+        "en": "Intellectual property"
+      },
+      "parentCode": null,
+      "status": "draft",
+      "regulated": true
+    },
+    {
+      "kind": "delivery_mode",
+      "code": "written_consultation",
+      "labels": {
+        "ar": "استشارة مكتوبة",
+        "en": "Written consultation"
+      },
+      "parentCode": null,
+      "status": "enabled"
+    },
+    {
+      "kind": "delivery_mode",
+      "code": "video_consultation",
+      "labels": {
+        "ar": "استشارة مرئية",
+        "en": "Video consultation"
+      },
+      "parentCode": null,
+      "status": "enabled"
+    },
+    {
+      "kind": "delivery_mode",
+      "code": "audio_consultation",
+      "labels": {
+        "ar": "استشارة صوتية",
+        "en": "Audio consultation"
+      },
+      "parentCode": null,
+      "status": "enabled"
+    },
+    {
+      "kind": "delivery_mode",
+      "code": "document_review",
+      "labels": {
+        "ar": "مراجعة مستند",
+        "en": "Document review"
+      },
+      "parentCode": null,
+      "status": "enabled"
+    },
+    {
+      "kind": "delivery_mode",
+      "code": "project_advisory",
+      "labels": {
+        "ar": "إرشاد مشروع",
+        "en": "Project advisory"
+      },
+      "parentCode": null,
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "technology_software",
+      "labels": {
+        "ar": "تطوير البرمجيات",
+        "en": "Software"
+      },
+      "parentCode": "technology",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "technology_software_advisory",
+      "labels": {
+        "ar": "تطوير البرمجيات",
+        "en": "Software advisory"
+      },
+      "parentCode": "technology_software",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "technology_systems",
+      "labels": {
+        "ar": "هندسة الأنظمة",
+        "en": "Systems"
+      },
+      "parentCode": "technology",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "technology_systems_advisory",
+      "labels": {
+        "ar": "هندسة الأنظمة",
+        "en": "Systems advisory"
+      },
+      "parentCode": "technology_systems",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "technology_cloud_devops",
+      "labels": {
+        "ar": "السحابة وDevOps",
+        "en": "Cloud Devops"
+      },
+      "parentCode": "technology",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "technology_cloud_devops_advisory",
+      "labels": {
+        "ar": "السحابة وDevOps",
+        "en": "Cloud Devops advisory"
+      },
+      "parentCode": "technology_cloud_devops",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "technology_data_ai",
+      "labels": {
+        "ar": "البيانات والذكاء الاصطناعي",
+        "en": "Data Ai"
+      },
+      "parentCode": "technology",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "technology_data_ai_advisory",
+      "labels": {
+        "ar": "البيانات والذكاء الاصطناعي",
+        "en": "Data Ai advisory"
+      },
+      "parentCode": "technology_data_ai",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "technology_automation",
+      "labels": {
+        "ar": "التكاملات والأتمتة",
+        "en": "Automation"
+      },
+      "parentCode": "technology",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "technology_automation_advisory",
+      "labels": {
+        "ar": "التكاملات والأتمتة",
+        "en": "Automation advisory"
+      },
+      "parentCode": "technology_automation",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "technology_defensive_security",
+      "labels": {
+        "ar": "الأمن السيبراني الدفاعي",
+        "en": "Defensive Security"
+      },
+      "parentCode": "technology",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "technology_defensive_security_advisory",
+      "labels": {
+        "ar": "الأمن السيبراني الدفاعي",
+        "en": "Defensive Security advisory"
+      },
+      "parentCode": "technology_defensive_security",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "technology_technical_audit",
+      "labels": {
+        "ar": "التدقيق التقني",
+        "en": "Technical Audit"
+      },
+      "parentCode": "technology",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "technology_technical_audit_advisory",
+      "labels": {
+        "ar": "التدقيق التقني",
+        "en": "Technical Audit advisory"
+      },
+      "parentCode": "technology_technical_audit",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "business_strategy",
+      "labels": {
+        "ar": "استراتيجية الأعمال",
+        "en": "Strategy"
+      },
+      "parentCode": "business",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "business_strategy_advisory",
+      "labels": {
+        "ar": "استراتيجية الأعمال",
+        "en": "Strategy advisory"
+      },
+      "parentCode": "business_strategy",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "business_idea_review",
+      "labels": {
+        "ar": "دراسة الأفكار",
+        "en": "Idea Review"
+      },
+      "parentCode": "business",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "business_idea_review_advisory",
+      "labels": {
+        "ar": "دراسة الأفكار",
+        "en": "Idea Review advisory"
+      },
+      "parentCode": "business_idea_review",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "business_operations",
+      "labels": {
+        "ar": "تحسين العمليات",
+        "en": "Operations"
+      },
+      "parentCode": "business",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "business_operations_advisory",
+      "labels": {
+        "ar": "تحسين العمليات",
+        "en": "Operations advisory"
+      },
+      "parentCode": "business_operations",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "business_project_management",
+      "labels": {
+        "ar": "إدارة المشاريع",
+        "en": "Project Management"
+      },
+      "parentCode": "business",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "business_project_management_advisory",
+      "labels": {
+        "ar": "إدارة المشاريع",
+        "en": "Project Management advisory"
+      },
+      "parentCode": "business_project_management",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "business_ecommerce",
+      "labels": {
+        "ar": "التجارة الإلكترونية",
+        "en": "Ecommerce"
+      },
+      "parentCode": "business",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "business_ecommerce_advisory",
+      "labels": {
+        "ar": "التجارة الإلكترونية",
+        "en": "Ecommerce advisory"
+      },
+      "parentCode": "business_ecommerce",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "business_operational_expansion",
+      "labels": {
+        "ar": "التوسع التشغيلي",
+        "en": "Operational Expansion"
+      },
+      "parentCode": "business",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "business_operational_expansion_advisory",
+      "labels": {
+        "ar": "التوسع التشغيلي",
+        "en": "Operational Expansion advisory"
+      },
+      "parentCode": "business_operational_expansion",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "business_product_strategy",
+      "labels": {
+        "ar": "استراتيجية المنتجات",
+        "en": "Product Strategy"
+      },
+      "parentCode": "business",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "business_product_strategy_advisory",
+      "labels": {
+        "ar": "استراتيجية المنتجات",
+        "en": "Product Strategy advisory"
+      },
+      "parentCode": "business_product_strategy",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "design_ux_research",
+      "labels": {
+        "ar": "أبحاث تجربة المستخدم",
+        "en": "Ux Research"
+      },
+      "parentCode": "design",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "design_ux_research_advisory",
+      "labels": {
+        "ar": "أبحاث تجربة المستخدم",
+        "en": "Ux Research advisory"
+      },
+      "parentCode": "design_ux_research",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "design_ux_ui",
+      "labels": {
+        "ar": "تصميم تجربة وواجهة المستخدم",
+        "en": "Ux Ui"
+      },
+      "parentCode": "design",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "design_ux_ui_advisory",
+      "labels": {
+        "ar": "تصميم تجربة وواجهة المستخدم",
+        "en": "Ux Ui advisory"
+      },
+      "parentCode": "design_ux_ui",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "design_product_design",
+      "labels": {
+        "ar": "تصميم المنتجات",
+        "en": "Product Design"
+      },
+      "parentCode": "design",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "design_product_design_advisory",
+      "labels": {
+        "ar": "تصميم المنتجات",
+        "en": "Product Design advisory"
+      },
+      "parentCode": "design_product_design",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "design_service_design",
+      "labels": {
+        "ar": "تصميم الخدمات",
+        "en": "Service Design"
+      },
+      "parentCode": "design",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "design_service_design_advisory",
+      "labels": {
+        "ar": "تصميم الخدمات",
+        "en": "Service Design advisory"
+      },
+      "parentCode": "design_service_design",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "design_accessibility",
+      "labels": {
+        "ar": "مراجعة إمكانية الوصول",
+        "en": "Accessibility"
+      },
+      "parentCode": "design",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "design_accessibility_advisory",
+      "labels": {
+        "ar": "مراجعة إمكانية الوصول",
+        "en": "Accessibility advisory"
+      },
+      "parentCode": "design_accessibility",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "design_digital_product_review",
+      "labels": {
+        "ar": "مراجعة المنتجات الرقمية",
+        "en": "Digital Product Review"
+      },
+      "parentCode": "design",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "design_digital_product_review_advisory",
+      "labels": {
+        "ar": "مراجعة المنتجات الرقمية",
+        "en": "Digital Product Review advisory"
+      },
+      "parentCode": "design_digital_product_review",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "marketing_marketing_strategy",
+      "labels": {
+        "ar": "الاستراتيجية التسويقية",
+        "en": "Marketing Strategy"
+      },
+      "parentCode": "marketing",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "marketing_marketing_strategy_advisory",
+      "labels": {
+        "ar": "الاستراتيجية التسويقية",
+        "en": "Marketing Strategy advisory"
+      },
+      "parentCode": "marketing_marketing_strategy",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "marketing_seo",
+      "labels": {
+        "ar": "تحسين محركات البحث",
+        "en": "Seo"
+      },
+      "parentCode": "marketing",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "marketing_seo_advisory",
+      "labels": {
+        "ar": "تحسين محركات البحث",
+        "en": "Seo advisory"
+      },
+      "parentCode": "marketing_seo",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "marketing_content_strategy",
+      "labels": {
+        "ar": "استراتيجية المحتوى",
+        "en": "Content Strategy"
+      },
+      "parentCode": "marketing",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "marketing_content_strategy_advisory",
+      "labels": {
+        "ar": "استراتيجية المحتوى",
+        "en": "Content Strategy advisory"
+      },
+      "parentCode": "marketing_content_strategy",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "marketing_campaigns",
+      "labels": {
+        "ar": "الحملات الرقمية",
+        "en": "Campaigns"
+      },
+      "parentCode": "marketing",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "marketing_campaigns_advisory",
+      "labels": {
+        "ar": "الحملات الرقمية",
+        "en": "Campaigns advisory"
+      },
+      "parentCode": "marketing_campaigns",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "marketing_marketing_analytics",
+      "labels": {
+        "ar": "تحليلات التسويق",
+        "en": "Marketing Analytics"
+      },
+      "parentCode": "marketing",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "marketing_marketing_analytics_advisory",
+      "labels": {
+        "ar": "تحليلات التسويق",
+        "en": "Marketing Analytics advisory"
+      },
+      "parentCode": "marketing_marketing_analytics",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "marketing_crm",
+      "labels": {
+        "ar": "إدارة علاقات العملاء",
+        "en": "Crm"
+      },
+      "parentCode": "marketing",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "marketing_crm_advisory",
+      "labels": {
+        "ar": "إدارة علاقات العملاء",
+        "en": "Crm advisory"
+      },
+      "parentCode": "marketing_crm",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "marketing_market_entry",
+      "labels": {
+        "ar": "دخول الأسواق",
+        "en": "Market Entry"
+      },
+      "parentCode": "marketing",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "marketing_market_entry_advisory",
+      "labels": {
+        "ar": "دخول الأسواق",
+        "en": "Market Entry advisory"
+      },
+      "parentCode": "marketing_market_entry",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "career_cv_review",
+      "labels": {
+        "ar": "مراجعة السيرة الذاتية",
+        "en": "Cv Review"
+      },
+      "parentCode": "career",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "career_cv_review_advisory",
+      "labels": {
+        "ar": "مراجعة السيرة الذاتية",
+        "en": "Cv Review advisory"
+      },
+      "parentCode": "career_cv_review",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "career_linkedin",
+      "labels": {
+        "ar": "مراجعة LinkedIn",
+        "en": "Linkedin"
+      },
+      "parentCode": "career",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "career_linkedin_advisory",
+      "labels": {
+        "ar": "مراجعة LinkedIn",
+        "en": "Linkedin advisory"
+      },
+      "parentCode": "career_linkedin",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "career_interviews",
+      "labels": {
+        "ar": "التحضير للمقابلات",
+        "en": "Interviews"
+      },
+      "parentCode": "career",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "career_interviews_advisory",
+      "labels": {
+        "ar": "التحضير للمقابلات",
+        "en": "Interviews advisory"
+      },
+      "parentCode": "career_interviews",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "career_career_planning",
+      "labels": {
+        "ar": "التخطيط المهني",
+        "en": "Career Planning"
+      },
+      "parentCode": "career",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "career_career_planning_advisory",
+      "labels": {
+        "ar": "التخطيط المهني",
+        "en": "Career Planning advisory"
+      },
+      "parentCode": "career_career_planning",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "career_recruitment_guidance",
+      "labels": {
+        "ar": "إرشاد التوظيف دون استشارة قانونية",
+        "en": "Recruitment Guidance"
+      },
+      "parentCode": "career",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "career_recruitment_guidance_advisory",
+      "labels": {
+        "ar": "إرشاد التوظيف دون استشارة قانونية",
+        "en": "Recruitment Guidance advisory"
+      },
+      "parentCode": "career_recruitment_guidance",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "education_learning_plans",
+      "labels": {
+        "ar": "خطط التعلم",
+        "en": "Learning Plans"
+      },
+      "parentCode": "education",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "education_learning_plans_advisory",
+      "labels": {
+        "ar": "خطط التعلم",
+        "en": "Learning Plans advisory"
+      },
+      "parentCode": "education_learning_plans",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "education_academic_guidance",
+      "labels": {
+        "ar": "الإرشاد الأكاديمي",
+        "en": "Academic Guidance"
+      },
+      "parentCode": "education",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "education_academic_guidance_advisory",
+      "labels": {
+        "ar": "الإرشاد الأكاديمي",
+        "en": "Academic Guidance advisory"
+      },
+      "parentCode": "education_academic_guidance",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "education_training_design",
+      "labels": {
+        "ar": "تصميم البرامج التدريبية",
+        "en": "Training Design"
+      },
+      "parentCode": "education",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "education_training_design_advisory",
+      "labels": {
+        "ar": "تصميم البرامج التدريبية",
+        "en": "Training Design advisory"
+      },
+      "parentCode": "education_training_design",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "education_learning_paths",
+      "labels": {
+        "ar": "اختيار المسارات التعليمية",
+        "en": "Learning Paths"
+      },
+      "parentCode": "education",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "education_learning_paths_advisory",
+      "labels": {
+        "ar": "اختيار المسارات التعليمية",
+        "en": "Learning Paths advisory"
+      },
+      "parentCode": "education_learning_paths",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "education_research_guidance",
+      "labels": {
+        "ar": "الإرشاد البحثي دون تنفيذ الأبحاث",
+        "en": "Research Guidance"
+      },
+      "parentCode": "education",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "education_research_guidance_advisory",
+      "labels": {
+        "ar": "الإرشاد البحثي دون تنفيذ الأبحاث",
+        "en": "Research Guidance advisory"
+      },
+      "parentCode": "education_research_guidance",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "translation_general_translation",
+      "labels": {
+        "ar": "الترجمة العامة",
+        "en": "General Translation"
+      },
+      "parentCode": "translation",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "translation_general_translation_advisory",
+      "labels": {
+        "ar": "الترجمة العامة",
+        "en": "General Translation advisory"
+      },
+      "parentCode": "translation_general_translation",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "translation_localization",
+      "labels": {
+        "ar": "التوطين اللغوي",
+        "en": "Localization"
+      },
+      "parentCode": "translation",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "translation_localization_advisory",
+      "labels": {
+        "ar": "التوطين اللغوي",
+        "en": "Localization advisory"
+      },
+      "parentCode": "translation_localization",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "translation_proofreading",
+      "labels": {
+        "ar": "المراجعة اللغوية",
+        "en": "Proofreading"
+      },
+      "parentCode": "translation",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "translation_proofreading_advisory",
+      "labels": {
+        "ar": "المراجعة اللغوية",
+        "en": "Proofreading advisory"
+      },
+      "parentCode": "translation_proofreading",
+      "status": "enabled"
+    },
+    {
+      "kind": "specialty",
+      "code": "translation_terminology",
+      "labels": {
+        "ar": "إدارة المصطلحات",
+        "en": "Terminology"
+      },
+      "parentCode": "translation",
+      "status": "enabled"
+    },
+    {
+      "kind": "service",
+      "code": "translation_terminology_advisory",
+      "labels": {
+        "ar": "إدارة المصطلحات",
+        "en": "Terminology advisory"
+      },
+      "parentCode": "translation_terminology",
+      "status": "enabled"
+    },
+    {
+      "kind": "domain",
+      "code": "medical",
+      "labels": {
+        "ar": "الطب",
+        "en": "Medical"
+      },
+      "parentCode": null,
+      "status": "blocked",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "health",
+      "labels": {
+        "ar": "الصحة السريرية",
+        "en": "Clinical health"
+      },
+      "parentCode": null,
+      "status": "blocked",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "finance",
+      "labels": {
+        "ar": "الاستثمار المنظم",
+        "en": "Regulated finance"
+      },
+      "parentCode": null,
+      "status": "blocked",
+      "regulated": true
+    },
+    {
+      "kind": "domain",
+      "code": "investment",
+      "labels": {
+        "ar": "الاستثمار الشخصي",
+        "en": "Personal investment"
+      },
+      "parentCode": null,
+      "status": "blocked",
+      "regulated": true
+    },
+    {
+      "kind": "safety_rule",
+      "code": "emergency",
+      "labels": {
+        "ar": "emergency",
+        "en": "emergency"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "rules": {
+        "keywords": [
+          "kill myself",
+          "suicid",
+          "انتحار",
+          "نزيف شديد",
+          "حالة طارئة"
+        ],
+        "reasonCode": "SAFETY_OR_EMERGENCY"
+      }
+    },
+    {
+      "kind": "safety_rule",
+      "code": "clinical",
+      "labels": {
+        "ar": "clinical",
+        "en": "clinical"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "rules": {
+        "keywords": [
+          "medical diagnosis",
+          "prescribe medication",
+          "clinical psychotherapy",
+          "تشخيص طبي",
+          "وصف علاج",
+          "وصف دواء",
+          "علاج نفسي سريري"
+        ],
+        "reasonCode": "SAFETY_OR_EMERGENCY"
+      }
+    },
+    {
+      "kind": "safety_rule",
+      "code": "prohibited",
+      "labels": {
+        "ar": "prohibited",
+        "en": "prohibited"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "rules": {
+        "keywords": [
+          "malware attack",
+          "steal credentials",
+          "سرقة كلمات المرور",
+          "اختراق حساب",
+          "do my homework",
+          "write my thesis for me",
+          "حل واجبي بدلا مني",
+          "اكتب بحثي بدلا مني"
+        ],
+        "reasonCode": "SAFETY_OR_EMERGENCY"
+      }
+    },
+    {
+      "kind": "safety_rule",
+      "code": "investment",
+      "labels": {
+        "ar": "investment",
+        "en": "investment"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "rules": {
+        "keywords": [
+          "personal investment recommendation",
+          "which stock should i buy",
+          "توصية استثمار شخصية"
+        ],
+        "reasonCode": "HUMAN_TRIAGE_REQUIRED"
+      }
+    },
+    {
+      "kind": "safety_rule",
+      "code": "licensed_representation",
+      "labels": {
+        "ar": "licensed_representation",
+        "en": "licensed_representation"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "rules": {
+        "keywords": [
+          "represent me in court",
+          "تمثيل أمام المحكمة",
+          "تصديق رسمي",
+          "certified translation",
+          "sworn translation",
+          "ترجمة محلفة",
+          "immigration representation"
+        ],
+        "reasonCode": "HUMAN_TRIAGE_REQUIRED"
+      }
+    },
+    {
+      "kind": "safety_rule",
+      "code": "onsite",
+      "labels": {
+        "ar": "onsite",
+        "en": "onsite"
+      },
+      "parentCode": null,
+      "status": "enabled",
+      "rules": {
+        "keywords": [
+          "site inspection",
+          "final building safety approval",
+          "فحص ميداني",
+          "اعتماد سلامة المبنى"
+        ],
+        "reasonCode": "REMOTE_DELIVERY_NOT_ALLOWED"
+      }
+    }
+  ],
+  "entries": [
+    {
+      "code": "technology_software_advisory_global",
+      "policy": {
+        "domain": "technology",
+        "specialty": "technology_software",
+        "serviceType": "technology_software_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "technology_systems_advisory_global",
+      "policy": {
+        "domain": "technology",
+        "specialty": "technology_systems",
+        "serviceType": "technology_systems_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "technology_cloud_devops_advisory_global",
+      "policy": {
+        "domain": "technology",
+        "specialty": "technology_cloud_devops",
+        "serviceType": "technology_cloud_devops_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "technology_data_ai_advisory_global",
+      "policy": {
+        "domain": "technology",
+        "specialty": "technology_data_ai",
+        "serviceType": "technology_data_ai_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "technology_automation_advisory_global",
+      "policy": {
+        "domain": "technology",
+        "specialty": "technology_automation",
+        "serviceType": "technology_automation_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "technology_defensive_security_advisory_global",
+      "policy": {
+        "domain": "technology",
+        "specialty": "technology_defensive_security",
+        "serviceType": "technology_defensive_security_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "technology_technical_audit_advisory_global",
+      "policy": {
+        "domain": "technology",
+        "specialty": "technology_technical_audit",
+        "serviceType": "technology_technical_audit_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "business_strategy_advisory_global",
+      "policy": {
+        "domain": "business",
+        "specialty": "business_strategy",
+        "serviceType": "business_strategy_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "business_idea_review_advisory_global",
+      "policy": {
+        "domain": "business",
+        "specialty": "business_idea_review",
+        "serviceType": "business_idea_review_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "business_operations_advisory_global",
+      "policy": {
+        "domain": "business",
+        "specialty": "business_operations",
+        "serviceType": "business_operations_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "business_project_management_advisory_global",
+      "policy": {
+        "domain": "business",
+        "specialty": "business_project_management",
+        "serviceType": "business_project_management_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "business_ecommerce_advisory_global",
+      "policy": {
+        "domain": "business",
+        "specialty": "business_ecommerce",
+        "serviceType": "business_ecommerce_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "business_operational_expansion_advisory_global",
+      "policy": {
+        "domain": "business",
+        "specialty": "business_operational_expansion",
+        "serviceType": "business_operational_expansion_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "business_product_strategy_advisory_global",
+      "policy": {
+        "domain": "business",
+        "specialty": "business_product_strategy",
+        "serviceType": "business_product_strategy_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "design_ux_research_advisory_global",
+      "policy": {
+        "domain": "design",
+        "specialty": "design_ux_research",
+        "serviceType": "design_ux_research_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "design_ux_ui_advisory_global",
+      "policy": {
+        "domain": "design",
+        "specialty": "design_ux_ui",
+        "serviceType": "design_ux_ui_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "design_product_design_advisory_global",
+      "policy": {
+        "domain": "design",
+        "specialty": "design_product_design",
+        "serviceType": "design_product_design_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "design_service_design_advisory_global",
+      "policy": {
+        "domain": "design",
+        "specialty": "design_service_design",
+        "serviceType": "design_service_design_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "design_accessibility_advisory_global",
+      "policy": {
+        "domain": "design",
+        "specialty": "design_accessibility",
+        "serviceType": "design_accessibility_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "design_digital_product_review_advisory_global",
+      "policy": {
+        "domain": "design",
+        "specialty": "design_digital_product_review",
+        "serviceType": "design_digital_product_review_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "marketing_marketing_strategy_advisory_global",
+      "policy": {
+        "domain": "marketing",
+        "specialty": "marketing_marketing_strategy",
+        "serviceType": "marketing_marketing_strategy_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "marketing_seo_advisory_global",
+      "policy": {
+        "domain": "marketing",
+        "specialty": "marketing_seo",
+        "serviceType": "marketing_seo_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "marketing_content_strategy_advisory_global",
+      "policy": {
+        "domain": "marketing",
+        "specialty": "marketing_content_strategy",
+        "serviceType": "marketing_content_strategy_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "marketing_campaigns_advisory_global",
+      "policy": {
+        "domain": "marketing",
+        "specialty": "marketing_campaigns",
+        "serviceType": "marketing_campaigns_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "marketing_marketing_analytics_advisory_global",
+      "policy": {
+        "domain": "marketing",
+        "specialty": "marketing_marketing_analytics",
+        "serviceType": "marketing_marketing_analytics_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "marketing_crm_advisory_global",
+      "policy": {
+        "domain": "marketing",
+        "specialty": "marketing_crm",
+        "serviceType": "marketing_crm_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "marketing_market_entry_advisory_global",
+      "policy": {
+        "domain": "marketing",
+        "specialty": "marketing_market_entry",
+        "serviceType": "marketing_market_entry_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "career_cv_review_advisory_global",
+      "policy": {
+        "domain": "career",
+        "specialty": "career_cv_review",
+        "serviceType": "career_cv_review_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "career_linkedin_advisory_global",
+      "policy": {
+        "domain": "career",
+        "specialty": "career_linkedin",
+        "serviceType": "career_linkedin_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "career_interviews_advisory_global",
+      "policy": {
+        "domain": "career",
+        "specialty": "career_interviews",
+        "serviceType": "career_interviews_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "career_career_planning_advisory_global",
+      "policy": {
+        "domain": "career",
+        "specialty": "career_career_planning",
+        "serviceType": "career_career_planning_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "career_recruitment_guidance_advisory_global",
+      "policy": {
+        "domain": "career",
+        "specialty": "career_recruitment_guidance",
+        "serviceType": "career_recruitment_guidance_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "education_learning_plans_advisory_global",
+      "policy": {
+        "domain": "education",
+        "specialty": "education_learning_plans",
+        "serviceType": "education_learning_plans_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "education_academic_guidance_advisory_global",
+      "policy": {
+        "domain": "education",
+        "specialty": "education_academic_guidance",
+        "serviceType": "education_academic_guidance_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "education_training_design_advisory_global",
+      "policy": {
+        "domain": "education",
+        "specialty": "education_training_design",
+        "serviceType": "education_training_design_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "education_learning_paths_advisory_global",
+      "policy": {
+        "domain": "education",
+        "specialty": "education_learning_paths",
+        "serviceType": "education_learning_paths_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "education_research_guidance_advisory_global",
+      "policy": {
+        "domain": "education",
+        "specialty": "education_research_guidance",
+        "serviceType": "education_research_guidance_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "translation_general_translation_advisory_global",
+      "policy": {
+        "domain": "translation",
+        "specialty": "translation_general_translation",
+        "serviceType": "translation_general_translation_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "translation_localization_advisory_global",
+      "policy": {
+        "domain": "translation",
+        "specialty": "translation_localization",
+        "serviceType": "translation_localization_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "translation_proofreading_advisory_global",
+      "policy": {
+        "domain": "translation",
+        "specialty": "translation_proofreading",
+        "serviceType": "translation_proofreading_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    },
+    {
+      "code": "translation_terminology_advisory_global",
+      "policy": {
+        "domain": "translation",
+        "specialty": "translation_terminology",
+        "serviceType": "translation_terminology_advisory",
+        "deliveryModes": [
+          "written_consultation",
+          "video_consultation",
+          "document_review"
+        ],
+        "jurisdictionMode": "GLOBAL",
+        "jurisdictionCodes": [],
+        "regulated": false,
+        "remoteDeliveryAllowed": true,
+        "requiresVerifiedScope": true,
+        "requiresProfessionalLicense": false,
+        "requiredEvidenceType": "qualification",
+        "minimumExperts": 1,
+        "maximumExperts": 1,
+        "intakeSchema": [],
+        "matchingRules": {
+          "keywords": [],
+          "prohibitedKeywords": [],
+          "humanReviewRequired": false
+        },
+        "commerciallyAvailable": false,
+        "operationallyAvailable": false,
+        "requiredConsents": [
+          "terms",
+          "privacy"
+        ],
+        "requiredDocuments": [],
+        "effectiveFrom": "2026-10-01T00:00:00Z",
+        "effectiveUntil": null
+      }
+    }
+  ]
+}

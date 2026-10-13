@@ -1,0 +1,9 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 0
+    parseModelCastsMethod: true
+    paths:
+        - app
+    tmpDir: storage/framework/cache/phpstan-legacy
