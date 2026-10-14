@@ -210,10 +210,11 @@ class DemoSeeder extends Seeder
             array_unshift($calls, AuthorizationSeeder::class, CasePermissionsSeeder::class, CatalogPermissionsSeeder::class, ExpertRenewalPermissionsSeeder::class,
                 FinancePermissionsSeeder::class, PrivacyPermissionsSeeder::class, ReviewPermissionsSeeder::class);
         }
-        if ($withPrivacyFixtures) {
-            $calls[] = PrivacyDevelopmentSeeder::class;
-        }
         $this->call($calls);
+        // Trial policy texts (terms/privacy/AI consent). Without a published policy no user can hold the consents a case needs.
+        $privacy = $this->resolve(PrivacyDevelopmentSeeder::class);
+        $privacy->allowOutsideLocal = true;
+        $privacy->__invoke();
 
         $super = $withAdmins ? $this->admins() : $this->anyAdmin();
         $versions = $this->catalog($super);

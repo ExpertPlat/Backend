@@ -8,9 +8,12 @@ use LogicException;
 
 class PrivacyDevelopmentSeeder extends Seeder
 {
+    /** Set by `demo:seed-investor` so a trial deployment (production env) gets clearly-labelled trial policy texts. */
+    public bool $allowOutsideLocal = false;
+
     public function run(): void
     {
-        if (! app()->environment(['local', 'testing'])) {
+        if (! $this->allowOutsideLocal && ! app()->environment(['local', 'testing'])) {
             throw new LogicException('Synthetic privacy fixtures are restricted to local/testing.');
         }
         foreach (config('privacy.purposes') as $purpose) {
