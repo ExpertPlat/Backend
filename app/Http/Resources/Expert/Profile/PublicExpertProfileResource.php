@@ -23,9 +23,7 @@ class PublicExpertProfileResource extends JsonResource
             'specialties' => $this->specialties ?? [],
             'languages' => $this->public_languages ?? [],
             'country' => $this->expert->country,
-            'avatarUrl' => $this->avatar_path
-                ? Storage::disk($this->avatar_disk)->url($this->avatar_path)
-                : null,
+            'avatarUrl' => $this->resource->avatarUrl(),
             'verification' => [
                 'status' => 'verified',
                 'scopes' => VerifiedScopeResource::collection($effectiveScopes),

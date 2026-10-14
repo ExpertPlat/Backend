@@ -411,11 +411,12 @@ class DemoSeeder extends Seeder
         $profile = $this->one(ExpertProfile::class, 'expert_id', $expert->id);
         $data = ['expert_id' => $expert->id, 'slug' => $e['slug'], 'professional_title' => $e['title'], 'bio' => $e['bio'], 'years_experience' => $e['years'],
             'specialties' => $e['specialties'], 'public_languages' => ['ar', 'en'], 'is_published' => true, 'published_at' => $profile->published_at ?: now()->subDays(50)];
-        if (! empty($e['photo']) && ! $profile->avatar_path) {
+        $missing = ! $profile->avatar_path || $profile->avatar_disk !== ExpertProfile::avatarDisk() || ! Storage::disk((string) $profile->avatar_disk)->exists((string) $profile->avatar_path);
+        if (! empty($e['photo']) && $missing) {
             $photo = database_path('data/demo/'.$e['photo']);
             $avatar = "expert-avatars/{$expert->id}/".Str::random(20).'.jpg';
-            Storage::disk('public')->put($avatar, (string) file_get_contents($photo));
-            $data += ['avatar_disk' => 'public', 'avatar_path' => $avatar, 'avatar_original_name' => $e['photo'], 'avatar_mime_type' => 'image/jpeg', 'avatar_size' => filesize($photo)];
+            Storage::disk(ExpertProfile::avatarDisk())->put($avatar, (string) file_get_contents($photo));
+            $data += ['avatar_disk' => ExpertProfile::avatarDisk(), 'avatar_path' => $avatar, 'avatar_original_name' => $e['photo'], 'avatar_mime_type' => 'image/jpeg', 'avatar_size' => filesize($photo)];
         }
         $profile->forceFill($data)->save();
         $day = fn (string $d, bool $on) => ['day' => $d, 'enabled' => $on, 'windows' => $on ? [['start' => '10:00', 'end' => '16:00']] : []];

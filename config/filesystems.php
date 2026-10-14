@@ -2,6 +2,10 @@
 
 return [
 
+    // Where expert profile photos are stored. Set EXPERT_AVATAR_DISK=private (the bucket) on Laravel Cloud.
+    'expert_avatar_disk' => env('EXPERT_AVATAR_DISK', 'public'),
+
+
     /*
     |--------------------------------------------------------------------------
     | Default Filesystem Disk

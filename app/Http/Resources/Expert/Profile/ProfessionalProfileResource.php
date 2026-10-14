@@ -18,9 +18,7 @@ class ProfessionalProfileResource extends JsonResource
             'yearsExperience' => $this->years_experience,
             'specialties' => $this->specialties ?? [],
             'publicLanguages' => $this->public_languages ?? [],
-            'avatarUrl' => $this->avatar_path
-                ? Storage::disk($this->avatar_disk)->url($this->avatar_path)
-                : null,
+            'avatarUrl' => $this->resource->avatarUrl(),
             'isPublished' => (bool) $this->is_published,
             'publishedAt' => $this->published_at?->toISOString(),
             'updatedAt' => $this->updated_at?->toISOString(),

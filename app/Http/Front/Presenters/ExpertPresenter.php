@@ -22,7 +22,7 @@ final class ExpertPresenter
     {
         $p = $e->profile;
 
-        return $p?->avatar_path ? Storage::disk($p->avatar_disk ?: 'public')->url($p->avatar_path) : null;
+        return $p?->avatarUrl();
     }
 
     public static function country(?string $code): mixed

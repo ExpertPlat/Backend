@@ -78,6 +78,9 @@ Route::middleware(['auth:sanctum', 'regular-user', 'user.verified', 'abilities:u
         Route::get('/user', [\App\Http\Controllers\Api\Front\UserAccountController::class, 'me'])->name('auth.user');
     });
 
+Route::get('/media/expert-avatars/{profile}/{file}', [\App\Http\Controllers\Api\PublicApi\ExpertAvatarController::class, 'show'])
+    ->whereNumber('profile')->where('file', '[A-Za-z0-9._-]+')->middleware('throttle:120,1')->name('media.expert-avatar');
+
 Route::get('/experts/{profile:slug}', [PublicExpertProfileController::class, 'show'])
     ->middleware('throttle:public-expert-profile')
     ->name('experts.show');

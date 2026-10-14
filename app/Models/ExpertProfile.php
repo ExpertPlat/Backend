@@ -31,6 +31,25 @@ class ExpertProfile extends Model
         ];
     }
 
+    /** Disk new avatars are written to: `public` locally, the object-storage disk (e.g. `private`) on Laravel Cloud. */
+    public static function avatarDisk(): string
+    {
+        return (string) config('filesystems.expert_avatar_disk', 'public');
+    }
+
+    /**
+     * Avatar URL served by the API (GET /api/media/expert-avatars/{id}/{file}), so it works with any disk — a local disk
+     * without `storage:link`, or a private bucket on Laravel Cloud. The file name in the URL busts caches on change.
+     */
+    public function avatarUrl(): ?string
+    {
+        if (! $this->avatar_path) {
+            return null;
+        }
+
+        return rtrim((string) config('app.url'), '/').'/api/media/expert-avatars/'.$this->getKey().'/'.basename($this->avatar_path);
+    }
+
     /** Public visibility rule shared by the profile and its reviews. Requires `expert` and `expert.verifiedScopes` to be loadable. */
     public function isPubliclyVisible(): bool
     {

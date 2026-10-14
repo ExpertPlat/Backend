@@ -68,7 +68,7 @@ class ExpertProfileManager
     public function uploadAvatar(Expert $expert, UploadedFile $file): ExpertProfile
     {
         $profile = $this->profile($expert);
-        $disk = 'public';
+        $disk = ExpertProfile::avatarDisk();
         $extension = mb_strtolower($file->extension());
         $path = 'expert-avatars/'.$expert->getKey().'/'.Str::uuid().'.'.$extension;
 
